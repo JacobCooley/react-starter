@@ -33,6 +33,16 @@ module.exports = {
 				use: {
 					loader: 'file-loader?name=assets/[name].[ext]'
 				}
+			},
+			{
+				test: /\.(eot|svg|ttf|woff|woff2)$/,
+				use: [{
+					loader: 'file-loader',
+					options: {
+						name: '[name].[ext]',
+						outputPath: 'fonts/'
+					}
+				}]
 			}
 		]
 	},
@@ -48,12 +58,13 @@ module.exports = {
 	resolve: {
 		extensions: ['.js', '.jsx'],
 		alias: {
-			app: path.resolve(__dirname, 'src/components/app'),
+			app: path.resolve(__dirname, 'src/modules/app'),
 			assets: path.resolve(__dirname, 'src/assets/'),
-			components: path.resolve(__dirname, 'src/components/'),
-			common: path.resolve(__dirname, 'src/components/common/'),
-			home: path.resolve(__dirname, 'src/components/home/'),
-			styles: path.resolve(__dirname, 'src/components/common/styles')
+			components: path.resolve(__dirname, 'src/modules/common/components/'),
+			modules: path.resolve(__dirname, 'src/modules/'),
+			common: path.resolve(__dirname, 'src/modules/common/'),
+			home: path.resolve(__dirname, 'src/modules/home/'),
+			styles: path.resolve(__dirname, 'src/modules/common/styles')
 		}
 	}
 };
