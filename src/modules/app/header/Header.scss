@@ -16,7 +16,8 @@ header {
       padding: $med-padding;
       a {
         display: inline-block;
-        color: white;
+        color: $yellow;
+        font-size: $large-font-size;
         text-decoration: none;
         vertical-align: center;
       }
