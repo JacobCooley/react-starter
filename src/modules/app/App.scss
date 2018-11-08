@@ -21,6 +21,10 @@ button:hover, a:hover {
   cursor: pointer;
 }
 
+button:focus, input:focus {
+  outline: 0;
+}
+
 a {
   color: white;
   text-decoration: none;

@@ -4,7 +4,7 @@ import {
 	Route
 } from 'react-router-dom';
 import Home from 'home/HomeContainer';
-import Reddit from 'home/RedditContainer';
+import Form from 'components/Form';
 import Header from 'app/header/HeaderComponent';
 import './App.scss'
 
@@ -16,7 +16,7 @@ class App extends Component {
 					<Header/>
 					<main>
 						<Route exact path='/' component={Home}/>
-						<Route path='/about' component={Reddit}/>
+						<Route path='/form' component={Form}/>
 					</main>
 				</div>
 			</Router>

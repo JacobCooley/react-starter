@@ -1,5 +1,4 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 module.exports = {
 	module: {
@@ -31,7 +30,7 @@ module.exports = {
 			{
 				test: /\.(jpe?g|gif|png|svg)$/,
 				use: {
-					loader: 'file-loader?name=assets/[name].[ext]'
+					loader: 'file-loader?name=assets/icons/[name].[ext]'
 				}
 			},
 			{
@@ -64,7 +63,8 @@ module.exports = {
 			modules: path.resolve(__dirname, 'src/modules/'),
 			common: path.resolve(__dirname, 'src/modules/common/'),
 			home: path.resolve(__dirname, 'src/modules/home/'),
-			styles: path.resolve(__dirname, 'src/modules/common/styles')
+			styles: path.resolve(__dirname, 'src/modules/common/styles'),
+			utils: path.resolve(__dirname, 'src/utils')
 		}
 	}
 };

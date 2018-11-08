@@ -31,7 +31,6 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "reduxsauce": "^1.0.0",
-    "request-promise": "^4.2.2",
     "sass-loader": "^7.1.0",
     "shortid": "^2.2.14",
     "style-loader": "^0.23.1",

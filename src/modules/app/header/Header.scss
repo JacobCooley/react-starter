@@ -10,6 +10,7 @@ header {
     grid-column: span 4;
     display: inline-flex;
     color: $red;
+    cursor: default;
     font-size: $large-font-size;
     align-items: center;
     margin-left: $large-margin;
