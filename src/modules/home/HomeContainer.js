@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import HomeComponent from './HomeComponent';
 import { homeOperations } from './duck';
+import PropTypes from 'prop-types'
 
 const mapStateToProps = state => {
     const { count } = state.home;
@@ -15,6 +16,18 @@ const mapDispatchToProps = dispatch => {
         onIncrementClick,
         onDecrementClick
     }
+};
+
+HomeComponent.propTypes = {
+	count: PropTypes.number,
+	onIncrementClick: PropTypes.func,
+	onDecrementClick: PropTypes.func,
+};
+
+HomeComponent.defaultProps = {
+	count: 0,
+	onIncrementClick: () => {},
+	onDecrementClick: () => {},
 };
 
 const HomeContainer = connect(

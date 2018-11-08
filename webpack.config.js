@@ -57,14 +57,14 @@ module.exports = {
 	resolve: {
 		extensions: ['.js', '.jsx'],
 		alias: {
-			app: path.resolve(__dirname, 'src/modules/app'),
-			assets: path.resolve(__dirname, 'src/assets/'),
-			components: path.resolve(__dirname, 'src/modules/common/components/'),
-			modules: path.resolve(__dirname, 'src/modules/'),
-			common: path.resolve(__dirname, 'src/modules/common/'),
-			home: path.resolve(__dirname, 'src/modules/home/'),
+			'@app': path.resolve(__dirname, 'src/modules/app'),
+			'@assets': path.resolve(__dirname, 'src/assets/'),
+			'@components': path.resolve(__dirname, 'src/modules/common/components/'),
+			'@modules': path.resolve(__dirname, 'src/modules/'),
+			'@common': path.resolve(__dirname, 'src/modules/common/'),
+			'@home': path.resolve(__dirname, 'src/modules/home/'),
 			styles: path.resolve(__dirname, 'src/modules/common/styles'),
-			utils: path.resolve(__dirname, 'src/utils')
+			'@utils': path.resolve(__dirname, 'src/utils')
 		}
 	}
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import RedditContainer from './RedditContainer';
-import Button from 'components/Button'
+import Button from '@components/Button'
+import PropTypes from "prop-types";
 
 const HomeComponent = ({ count, onIncrementClick, onDecrementClick }) => (
 	<div>
@@ -10,5 +11,17 @@ const HomeComponent = ({ count, onIncrementClick, onDecrementClick }) => (
 		<RedditContainer/>
 	</div>
 )
+
+HomeComponent.propTypes = {
+	count: PropTypes.number,
+	onIncrementClick: PropTypes.func,
+	onDecrementClick: PropTypes.func,
+};
+
+HomeComponent.defaultProps = {
+	count: 0,
+	onIncrementClick: () => {},
+	onDecrementClick: () => {},
+};
 
 export default HomeComponent;
