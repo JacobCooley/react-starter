@@ -1,0 +1,37 @@
+@import "~styles/colors";
+@import "~styles/constants";
+@import '~font-awesome/css/font-awesome.css';
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body, div, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  min-height: 100%;
+  background: $med-blue;
+  color: white;
+}
+
+main{
+  padding: $large-padding;
+}
+
+.container {
+  display: grid;
+  grid-template: 50px 1fr / repeat(12, 1fr);
+}

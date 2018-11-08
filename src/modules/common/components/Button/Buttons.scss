@@ -1,0 +1,13 @@
+@import "~styles/colors";
+@import "~styles/constants";
+
+button {
+  background: $light-blue;
+  border: 0;
+  border-radius: 8px;
+  min-width: 120px;
+  min-height: 40px;
+  color: white;
+  margin-top: $small-margin;
+  margin-bottom: $small-margin;
+}
