@@ -1,0 +1,21 @@
+@import "~styles/colors";
+
+header{
+  background: $light-blue;
+  display: block;
+  height: 50px;
+  nav {
+    display: flex;
+    height: 100%;
+    ul {
+      display: flex;
+      align-items: center;
+      a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        vertical-align: center;
+      }
+    }
+  }
+}
