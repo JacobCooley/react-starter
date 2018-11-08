@@ -1,0 +1,24 @@
+@import "~styles/constants";
+
+form{
+}
+
+label {
+  margin-right: $med-margin;
+  margin-top: $med-margin;
+  input {
+    margin-left: $med-margin;
+    padding-left: $med-padding;
+    border-radius: $border-radius;
+    border: 1px solid black;
+  }
+}
+
+label + label + label{
+  display: block;
+}
+
+button{
+  display: block;
+  margin-top: $med-margin;
+}
