@@ -4,6 +4,7 @@ import './Header.scss'
 
 const HeaderComponent = ({ count, onIncrementClick, onDecrementClick }) => (
 	<header>
+		<div>React Starter</div>
 		<nav>
 			<div><Link to='/'>Home</Link></div>
 			<div><Link to='/about'>About</Link></div>

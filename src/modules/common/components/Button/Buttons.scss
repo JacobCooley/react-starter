@@ -10,4 +10,17 @@ button {
   color: white;
   margin-top: $small-margin;
   margin-bottom: $small-margin;
+  transition: .3s
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover, a:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3f5a79;
 }
