@@ -1,7 +1,6 @@
 import { createReducer } from 'reduxsauce'
 import { Types } from './actions'
 
-// the initial state of this reducer
 export const INITIAL_STATE = {
     count: 0,
     subreddit: '',

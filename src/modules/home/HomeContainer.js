@@ -18,18 +18,6 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-HomeComponent.propTypes = {
-	count: PropTypes.number,
-	onIncrementClick: PropTypes.func,
-	onDecrementClick: PropTypes.func,
-};
-
-HomeComponent.defaultProps = {
-	count: 0,
-	onIncrementClick: () => {},
-	onDecrementClick: () => {},
-};
-
 const HomeContainer = connect(
     mapStateToProps,
     mapDispatchToProps

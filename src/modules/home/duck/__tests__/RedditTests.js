@@ -8,6 +8,13 @@ import renderer from 'react-test-renderer'
 
 configure({ adapter: new Adapter() })
 
+describe('<RedditComponent /> --- Snapshot',()=>{
+	it('+++capturing Snapshot of <RedditComponent />', () => {
+		const renderedValue =  renderer.create(<RedditComponent subredditData={[]}/>).toJSON()
+		expect(renderedValue).toMatchSnapshot();
+	});
+});
+
 describe('<RedditComponent />', () => {
 	let wrapper
 	const subredditData = []

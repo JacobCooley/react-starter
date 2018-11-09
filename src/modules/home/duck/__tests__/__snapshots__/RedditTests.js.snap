@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RedditComponent /> --- Snapshot +++capturing Snapshot of <RedditComponent /> 1`] = `
+<ul>
+  <button
+    onClick={[Function]}
+  >
+    Show ReactJS subreddits
+  </button>
+</ul>
+`;
